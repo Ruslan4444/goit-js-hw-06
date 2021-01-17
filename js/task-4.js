@@ -85,6 +85,6 @@ const users = [
   },
 ];
 
-const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor == color);
+const getInactiveUsers = users => users.filter(user => !user.isActive);
 
-console.table(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+console.table(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
