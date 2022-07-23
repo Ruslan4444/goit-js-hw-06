@@ -25,13 +25,12 @@ button {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   list-style: none;
 }
-.gallery__item:not(:last-child) {
-  margin-right: 25px;
-}
+
 .gallery__image {
   display: block;
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 300px;
 }
