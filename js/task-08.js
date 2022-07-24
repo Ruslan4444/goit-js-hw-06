@@ -13,14 +13,13 @@ function onFormSubmit(event) {
 
   if (mail === '' || password === '') {
     alert('Fill up all fields of form');
+  } else {
+    const formData = {
+      mail,
+      password,
+    };
+    console.log(formData);
+
+    refs.form.reset();
   }
-
-  const formData = {
-    mail,
-    password,
-  };
-
-  console.log(formData);
-
-  refs.form.reset();
 }
